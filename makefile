@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -Wall -Werror --std=c99
 
-all: main
+all: cql
 
-main: main.c
-	$(CC) $(CFLAGS) -o main main.c -g
+cql: cql.c
+	$(CC) $(CFLAGS) -o cql cql.c -g
 
 clean:
-	rm -f main
+	rm -f cql
